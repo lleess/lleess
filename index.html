@@ -52,15 +52,15 @@
 	  	  		<img class="big-logo" src="img/Logo.png" alt="">
 	  	  		<h1 class="main-title header-title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
 	  	  		<p class="header-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis aliquam eligendi officiis placeat fugit adipisci facere dolore doloribus porro modi ex maiores, dolorem molestias, quasi? Exercitationem dolorum dolore amet suscipit consectetur quibusdam nam autem, labore, reprehenderit, asperiores eos commodi, dolores recusandae qui molestias blanditiis.</p>
-	  	  		<a class="btn-download btn-transparent" href="#">Download</a>
+	  	  		<a data-modal class="btn-download btn-transparent" href="#">Download</a>
 	  	  	</div><!-- header-column column-text -->
 	  	  	<div class="header-column column-free-trial fadeIn">
 	  	  		<div class="form-wrapper">
 	  	  			<div class="subtitle form-title">Try Your <span class="orange">FREE</span> Trial Today</div>
 	  	  			<form class="form-header" action="#" method="post">
-	  	  				<input class="form-field" type="text" placeholder="Name">
-	  	  				<input class="form-field" type="text" placeholder="Email">
-	  	  				<input class="form-field" type="password" placeholder="Password">
+	  	  				<input class="form-field" type="text" placeholder="Name" required>
+	  	  				<input class="form-field" type="text" placeholder="Email" required>
+	  	  				<input class="form-field" type="password" placeholder="Password" required>
 	  	  				<input class="btn-submit" type="submit" value="Get Started">
 	  	  			</form>
 	  	  		</div><!-- form-wrapper -->
@@ -112,14 +112,14 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sunt molestiae est dolor maxime vero a similique, iusto, laborum dignissimos, veniam, corporis magni. Officia id, vero, maiores sunt tempore ad adipisci doloribus ipsa debitis ea. Numquam iusto, libero nihil recusandae harum, voluptatum reprehenderit dolorem nam in distinctio assumenda, fugit, qui eum.</p>
               <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Officiis quasi quia consectetur? Vero modi a consequatur officiis perspiciatis cum facilis! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Officiis quasi quia consectetur? Vero modi a consequatur officiis perspiciatis cum facilis!</p>
               </div>
-              <a class="btn-download btn-orange" href="#">Download</a>
+              <a data-modal class="btn-download btn-orange" href="#">Download</a>
             </div><!-- features-content -->
             <div class="features-content">
               <div class="subtitle">Tabs 2 title</div>
             <div class="text-description">
             <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Officiis quasi quia consectetur? Vero modi a consequatur officiis perspiciatis cum facilis! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Officiis quasi quia consectetur? Vero modi a consequatur officiis perspiciatis cum facilis!</p>
             </div>
-            <a class="btn-download btn-orange" href="#">Download</a>
+            <a data-modal class="btn-download btn-orange" href="#">Download</a>
           </div><!-- features-content -->
           <div class="features-content">
               <div class="subtitle">Tabs 3 title</div>
@@ -128,7 +128,7 @@
               <p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Sunt molestiae est dolor maxime vero a similique, iusto, laborum dignissimos, veniam, corporis magni. Officia id, vero, maiores sunt tempore ad adipisci doloribus ipsa debitis ea. Numquam iusto, libero nihil recusandae harum, voluptatum reprehenderit dolorem nam in distinctio assumenda, fugit, qui eum.</p>
             </div>
-            <a class="btn-download btn-orange" href="#">Download</a>
+            <a data-modal class="btn-download btn-orange" href="#">Download</a>
           </div><!-- features-content -->
             <div class="features-item features-img">
               <img src="img/city.png" alt="">
@@ -245,7 +245,7 @@
     <div class="container">
       <div class="pricing">
                
-        <div class="header-pricing"><
+        <div class="header-pricing">
           <div class="main-title main-title-black title-psevdoelement title-psevdoelement-center">PRICING OPTIONS</div>
           <div class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
         </div><!-- header-pricing -->
@@ -384,7 +384,7 @@
                     <div class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 </div><!-- header-custom-section -->
 
-                <a class="btn-download btn-transparent" href="#">Download</a>
+                <a data-modal class="btn-download btn-transparent" href="#">Download</a>
             </div><!-- custom-section -->
         </div><!-- container -->
     </section>
@@ -410,19 +410,19 @@
                     </div><!-- input-container -->
 
                     <div class="input-container">
-                      <input class="contact-input" id="you-email" type="email" required />
+                      <input class="contact-input" id="you-email" type="email" required>
                       <label class="form-label" for="you-email">Email</label>
                    </div><!-- input-container -->
 
                     <div class="input-container">
-                      <input class="contact-input" id="you-subject" type="text" required />
+                      <input class="contact-input" id="you-subject" type="text" required>
                       <label class="form-label" for="you-subject">Subject</label>
                     </div><!-- input-container -->
                   </div><!-- form-container -->
                   
                   <div class="form-container">
                     <div class="input-container">
-                      <textarea class="contact-input" name="Message" id="you-message" required /></textarea>
+                      <textarea class="contact-input" name="Message" id="you-message" required></textarea>
                       <label class="form-label"for="you-message">Message</label>
                     </div><!-- input-container -->
                   </div><!-- form-container -->
@@ -434,9 +434,22 @@
             </div><!-- contact -->
         </div><!-- container -->
     </section>
-
-
 </div><!-- wrapper -->
+
+<div class="modal hide">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="form-header" action="#" method="post">
+        <div data-close class="modal-close">&times;</div>
+        <div class="subtitle form-title">Try Your <span class="orange">FREE</span> Trial Today</div>
+        <input class="form-field" type="text" placeholder="Name" required>
+        <input class="form-field" type="text" placeholder="Email" required>
+        <input class="form-field" type="password" placeholder="Password" required>
+        <input class="btn-submit" type="submit" value="Get Started">
+      </form>
+    </div>
+  </div>
+</div>
 
 
 <script src='js/script.js'></script>

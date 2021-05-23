@@ -45,3 +45,35 @@ tabParent.addEventListener('click', (e) => {
         });
     }
 });
+
+
+
+// MODAL
+const modal = document.querySelector('.modal');
+const btnsShowModal = document.querySelectorAll('[data-modal]');
+
+function showModal() {
+    modal.classList.add('active');
+    modal.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+}
+
+function hideModal() {
+    modal.classList.add('hide');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+btnsShowModal.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showModal();
+    });
+});
+
+modal.addEventListener('click', (e) => {
+    if(e.target === modal || e.target.getAttribute('data-close') == '') {
+        hideModal();
+    }
+});
